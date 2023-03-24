@@ -1,0 +1,8 @@
+version: "2"
+services:
+  server:
+    image: jacobdevecomp/pbl_redes:servidor
+    restart: always
+    ports:
+      - "9900:9900/tcp"
+      - "9800:9800/udp"
