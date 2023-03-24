@@ -1,0 +1,12 @@
+version: "2"
+services:
+  server:
+    image: jacobdevecomp/pbl_redes:dispositivo
+    build:
+      context: .
+      dockerfile: Dockerfile
+    stdin_open: true
+    tty: true
+    restart: always
+    ports:
+      - "9800:9800/tcp"
